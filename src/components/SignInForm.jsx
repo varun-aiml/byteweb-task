@@ -7,15 +7,15 @@ export default function SignInForm() {
 
   return (
     <div style={{
-      minHeight: '100vh',
-      width: '100%',
+      height: '100vh',
+      width: '100vw',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
       backgroundColor: '#fafafa',
       position: 'relative',
-      overflowY: 'auto',
-      padding: '60px 20px',
+      overflow: 'hidden',
+      padding: '0',
       fontFamily: "'Outfit', 'Nunito', sans-serif"
     }}>
       {/* Background Graphic: Topographic Waves & World Map */}
@@ -39,9 +39,8 @@ export default function SignInForm() {
       {/* Main card */}
       <div style={{
         display: 'flex',
-        width: '90%',
-        maxWidth: '1000px',
-        minHeight: '600px',
+        width: '1150px',
+        height: '720px',
         backgroundColor: '#fff',
         borderRadius: '12px',
         overflow: 'hidden',

@@ -190,6 +190,26 @@ export default function Dashboard() {
               <svg style={{ cursor: 'pointer' }} width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
               <span style={{ position: 'absolute', top: 0, right: 0, width: 6, height: 6, background: '#00ab55', borderRadius: '50%', border: '1px solid white' }} />
             </div>
+            <button
+              onClick={() => navigate('/signin')}
+              style={{
+                background: 'linear-gradient(to right, #4361ee, #af1dca)',
+                color: 'white',
+                border: 'none',
+                borderRadius: 8,
+                padding: '7px 15px',
+                cursor: 'pointer',
+                fontSize: 12,
+                fontWeight: 700,
+                boxShadow: '0 4px 6px -1px rgba(67, 97, 238, 0.3)',
+                transition: 'all 0.2s',
+                whiteSpace: 'nowrap'
+              }}
+              onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-1px)'}
+              onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
+            >
+              Sign In
+            </button>
             <div style={{ width: 34, height: 34, borderRadius: '50%', overflow: 'hidden', cursor: 'pointer', border: '1px solid #e0e6ed' }}>
               <img src="https://i.pravatar.cc/150?u=admin" alt="profile" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </div>
